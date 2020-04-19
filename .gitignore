@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# R CMD - related
+*.tar.gz
+*.Rcheck
+

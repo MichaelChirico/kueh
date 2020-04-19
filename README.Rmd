@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# `kueh` R Color Palettes
+
+[_Kueh_(粿)](https://en.wikipedia.org/wiki/Kuih) are Southeast Asian pastries as varied and variegated as they are delicious. Hoping to whet the hunger of your audience with your R plots in that next presentation? Look no further!
+
+The setup of this package was inspired by [`LaCroixColorR`](https://github.com/johannesbjork/LaCroixColoR) and [`ghibli`](https://github.com/ewenme/ghibli).
+
+```{r salat_cars}
+library(kueh)
+
+with(mtcars, {
+  cyl = factor(cyl)
+  n = length(levels(cyl))
+  plot(disp, drat, col = kueh_palette('lapis_sagu', n)[cyl], pch = 19L)
+})
+```
+
+The following palettes are available:
+
+```{r all_palettes}
+all_palettes = kueh_palettes()
+all_palettes
+```
+
+Which look like:
+
+```{r plot_palettes}
+par(mfrow = n2mfrow(length(all_palettes)))
+for (ii in seq_along(all_palettes)) print(kueh_palette(names(all_palettes)[ii]))
+```
+
+Three types of color palette are available -- `discrete` (default), `continuous` (via `colorRampPalette`), and `paired` (the `discrete` colors, but darkened & lightened):
+
+```{r palette_types}
+par(mfrow = c(1L, 3L))
+print(kueh_palette('ang_ku', type = 'discrete'))
+print(kueh_palette('ang_ku', n = 500L, type = 'continuous'))
+print(kueh_palette('ang_ku', type = 'paired'))
+```
+
+
