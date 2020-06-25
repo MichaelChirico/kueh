@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
 
 msgid "No palette named '%s' available. Check kueh_palettes()"
-msgstr "'%s' palette don't have lah. Can check kueh_paletts()"
+msgstr "'%s' palette don't have lah. Can check kueh_palettes()"
 
 msgid "Requested %d colors, but only %d are available."
 msgstr "You ask for %d color but only have %d lor"
