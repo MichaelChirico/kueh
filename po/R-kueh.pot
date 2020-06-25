@@ -1,0 +1,17 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kueh 0.1.0\n"
+"POT-Creation-Date: 2020-04-27 19:38\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+msgid "No palette named '%s' available. Check kueh_palettes()"
+msgstr ""
+
+msgid "Requested %d colors, but only %d are available."
+msgstr ""
