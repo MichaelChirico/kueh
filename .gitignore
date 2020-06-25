@@ -7,3 +7,5 @@
 *.tar.gz
 *.Rcheck
 
+po/*~
+
