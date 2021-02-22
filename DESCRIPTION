@@ -10,8 +10,6 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     grDevices
-Suggests:
-    testthat
 URL: https://github.com/MichaelChirico/kueh
 BugReports: https://github.com/MichaelChirico/kueh/issues
 RoxygenNote: 7.0.2
