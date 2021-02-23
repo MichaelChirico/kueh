@@ -12,7 +12,7 @@ kueh_palette <- function(name, n, type = c("discrete", "continuous", "paired")) 
 
   if (missing(n)) {
     n = length(palette)
-  } else if (n > length(palette) && type != 'continuous') {
+  } else if ((type == "discrete" && n > length(palette)) || (type == "paired" && n > 2*length(palette))) {
     stop(
       gettextf("Requested %d colors, but only %d are available.",
                n, length(palette), domain = "R-kueh"),
